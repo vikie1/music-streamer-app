@@ -24,3 +24,5 @@ yarn-error.log*
 
 #keys
 src/protectedVars.js
+# Local Netlify folder
+.netlify

@@ -13,7 +13,7 @@ export const getLoginCreds = async ({ username, password }) => {
     if (!username || !password) {
       return { isAuthenticated };
     }
-    await fetch("https:pbvictor.herokuapp.com/api/music/user/" + username)
+    await fetch("https://pbvictor.herokuapp.com/api/music/user/" + username)
       .then((res) => {
         if (res.ok) {
           return res.json();

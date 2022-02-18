@@ -10,7 +10,7 @@ export const MusicListPage = (props) => {
   } = useFetch("https://pbvictor.herokuapp.com/api/music/");
   return (
     <div className="bg-gray-800 min-h-screen px-20 py-5">
-      {!error && <h1 className="text-white font-nunito text-5xl my-5">We have a great playlist for you</h1>}
+      {!error && <h1 className="text-white font-nunito text-4xl md:text-5xl md:my-5 text-center">We have a great playlist for you</h1>}
       {error && <div>{error}</div>}
       {isLoading && (
         <div>Please wait while the playlist is geting prepared...</div>

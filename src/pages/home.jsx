@@ -13,15 +13,12 @@ export const HomePage = (props) => {
     <div className="text-white">
       {/* Create a div for background image */}
       <main className="w-screen h-screen bg-[url('../public/images/background.jpg')]  bg-cover flex flex-col justify-center items-center">
-        <h1 className="font-cabin text-5xl font-extrabold">
+        <h1 className="px-2 text-center font-cabin text-5xl font-extrabold">
           Quench your thirst for music with us
         </h1>
-        {name && <div>You are currently logged in as {name}</div>}
-        <p className="px-[20%] text-center">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          Reprehenderit praesentium accusantium dicta mollitia nisi tempore
-          dolor quam eum molestiae iusto id minima ad nobis, corporis,
-          voluptatem quaerat non maxime iste.
+        {name && <div className="font-dosis">You are currently logged in as {name}</div>}
+        <p className="font-nunito text-xl px-[20%] text-center">
+          We have a great collection of music and you are invited to add more
         </p>
         <div className="my-3">
           <Link

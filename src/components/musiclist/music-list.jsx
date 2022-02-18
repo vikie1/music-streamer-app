@@ -86,11 +86,10 @@ export const MusicList = (props) => {
     }
     return null;
   }
-  console.log(arrayFilter(likes, ""+currentPlaying.id))
   return (
-    <div className="grid grid-cols-3">
+    <div className="grid gap-2 md:gap-0 md:grid-cols-3">
       {currentPlaying.id !== 0 && (
-        <div className="justify-self-center overflow-hidden col-start-1 col-end-3 w-10/12 h-96 flex justify-end flex-col bg-[url('./components/musiclist/music-art.webp')] bg-cover bg-no-repeat bg-center top-0 sticky">
+        <div className="justify-self-center overflow-hidden col-start-1 col-end-3 h-52 md:w-10/12 md:h-96 flex justify-end flex-col bg-[url('./components/musiclist/music-art.webp')] bg-cover bg-no-repeat bg-center top-0 sticky">
           <div className="flex justify-between">
             <span
               onClick={() => {
